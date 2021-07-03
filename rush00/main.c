@@ -5,16 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgaspar- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/02 15:27:38 by tgaspar-          #+#    #+#             */
-/*   Updated: 2021/07/02 15:31:01 by tgaspar-         ###   ########.fr       */
+/*   Created: 2021/07/03 12:03:21 by tgaspar-          #+#    #+#             */
+/*   Updated: 2021/07/03 12:04:32 by tgaspar-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_print_alphabet(void);
+#include <unistd.h>
 
-
-int main(void)	
+int main(void)
 {
-	ft_print_alphabet();
-	return 0;
+	rush(5, 5);
+		return(0);
 }
