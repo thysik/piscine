@@ -1,30 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgaspar- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/03 17:39:52 by tgaspar-          #+#    #+#             */
-/*   Updated: 2021/07/06 17:15:07 by tgaspar-         ###   ########.fr       */
+/*   Created: 2021/07/06 15:18:39 by tgaspar-          #+#    #+#             */
+/*   Updated: 2021/07/06 15:18:41 by tgaspar-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-void	ft_putchar(char a)
+#include <stdio.h>
+void ft_ft();
+int main(void)
 {
-	write(1, &a, 1);
-}
+    int a;
 
-void	ft_print_numbers(void)
-
-{
-	char	a;
-
-	a = 48;
-	while (a <= 57)
-	{
-		ft_putchar(a);
-		a++;
-	}
+    a =1;
+    printf("antes: &d/n", a);
+    ft_ft(&a);
+    printf("depois: &d/n", a);
 }

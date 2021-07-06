@@ -6,16 +6,16 @@
 /*   By: jmachado <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/03 10:58:43 by jmachado          #+#    #+#             */
-/*   Updated: 2021/07/03 21:05:15 by tgaspar-         ###   ########.fr       */
+/*   Updated: 2021/07/04 13:30:27 by tgaspar-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 #include <stdio.h>
 
-	int posicaoLargura;
-	int posicaoAltura;
-	int limiteAltura;
-	int limiteLargura;
+	int posicaoLargura; x
+	int posicaoAltura; y
+	int limiteAltura; yl
+	int limiteLargura; xl
 	char widthChar = '-';
 	char heightChar = '|';
 	char cornerChar = 'o';
@@ -26,15 +26,15 @@ void	ft_putchar(char a){
 	write(1,&a,1);
 }
 
-void linhaLimiteTopBot (int limiteLargura){
+void linhaLimiteTopBot (int xl){
 		ft_putchar(cornerChar);
-		while(posicaoLargura > -1 && posicaoLargura < limiteLargura-2){
+		while( x > -1 && x < x -2){
 			ft_putchar(widthChar);
-			posicaoLargura++;
+			x++;
 		}
 	ft_putchar(cornerChar);
 	ft_putchar('\n');
-	posicaoLargura = 0;
+	x = 0;
 }
 
 void linhasMiddle (int limiteLargura){

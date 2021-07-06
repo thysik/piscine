@@ -1,30 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgaspar- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/03 17:39:52 by tgaspar-          #+#    #+#             */
-/*   Updated: 2021/07/06 17:15:07 by tgaspar-         ###   ########.fr       */
+/*   Created: 2021/07/06 19:46:26 by tgaspar-          #+#    #+#             */
+/*   Updated: 2021/07/06 19:46:31 by tgaspar-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdio.h>
 #include <unistd.h>
 
-void	ft_putchar(char a)
+
+int		main(void)
 {
-	write(1, &a, 1);
-}
+	int a;
+	int *ptr1;
+	int **ptr2;
+	int ***ptr3;
+	int ****ptr4;
+	int *****ptr5;
+	int ******ptr6;
+	int *******ptr7;
+	int ********ptr8;
+	int *********ptr9;
 
-void	ft_print_numbers(void)
-
-{
-	char	a;
-
-	a = 48;
-	while (a <= 57)
-	{
-		ft_putchar(a);
-		a++;
-	}
+	a = 1;
+	ptr1 = &a;
+	ptr2 = &ptr1;
+	ptr3 = &ptr2;
+	ptr4 = &ptr3;
+	ptr5 = &ptr4;
+	ptr6 = &ptr5;
+	ptr7 = &ptr6;
+	ptr8 = &ptr7;
+	ptr9 = &ptr8;
+	printf("before: %d\n", a);
+	ft_ultimate_ft(ptr9);
+	printf("after : %d\n", a);
 }

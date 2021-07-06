@@ -6,18 +6,25 @@
 /*   By: tgaspar- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/02 15:35:56 by tgaspar-          #+#    #+#             */
-/*   Updated: 2021/07/03 17:33:20 by tgaspar-         ###   ########.fr       */
+/*   Updated: 2021/07/06 17:03:05 by tgaspar-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <unistd.h>
 
-void ft_print_alphabet(void)
+void	ft_putchar(char a)
 {
-	char a = 97;
-	char z = 122;
+	write(1, &a, 1);
+}
 
-	while(a <= 122)
+void	ft_print_alphabet(void)
+
+{
+	char	a;
+
+	a = 97;
+	while (a <= 122)
 	{
-		write(1,&a,1);
+		ft_putchar(a);
 		a++;
 	}
 }

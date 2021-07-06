@@ -1,30 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgaspar- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/03 17:39:52 by tgaspar-          #+#    #+#             */
-/*   Updated: 2021/07/06 17:15:07 by tgaspar-         ###   ########.fr       */
+/*   Created: 2021/07/04 20:06:50 by tgaspar-          #+#    #+#             */
+/*   Updated: 2021/07/05 16:05:56 by tgaspar-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-void	ft_putchar(char a)
+void ft_print_comb(void);
+
+int		main(void)
 {
-	write(1, &a, 1);
-}
-
-void	ft_print_numbers(void)
-
-{
-	char	a;
-
-	a = 48;
-	while (a <= 57)
-	{
-		ft_putchar(a);
-		a++;
-	}
+	ft_print_comb();
+	return (0);
 }

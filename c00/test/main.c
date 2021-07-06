@@ -11,17 +11,13 @@
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
-
-int soma (int a, int b){
-    return a+b;
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
 }
 
-int d;
-
+int		main(void)
 {
-d = soma(3, 5);
-
-printf("o resultdo: %d", d);
+	ft_putchar('A');
 }

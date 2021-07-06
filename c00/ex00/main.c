@@ -6,17 +6,14 @@
 /*   By: tgaspar- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/03 12:48:16 by tgaspar-          #+#    #+#             */
-/*   Updated: 2021/07/03 17:25:00 by tgaspar-         ###   ########.fr       */
+/*   Updated: 2021/07/05 15:06:56 by tgaspar-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <unistd.h>
-int ft_putchar()
-int main(void)
 
+int ft_putchar(void);
+
+int		main(void)
 {
-    char a = 97;
-    write(1, &c, 1)
-    return 0;
-    }
+	ft_putchar();
 }
